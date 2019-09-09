@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="55dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v7.widget.LinearLayoutCompat
+   android:layout_margin="9dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:padding="6dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/detalsname"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/border_shap"
+
+        android:textSize="16sp"
+
+
+    />
+    <TextView
+        android:padding="6dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/detalsage"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/border_shap"
+
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:padding="6dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/detalsphone"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/border_shap"
+
+        android:textSize="16sp"
+        />
+    <TextView
+        android:padding="6dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/detalstype"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/border_shap"
+
+        android:textSize="16sp"
+        />
+    <TextView
+        android:padding="6dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/detalsbugsnom"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/border_shap"
+
+        android:textSize="16sp"
+        />
+    <TextView
+        android:padding="6dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/detalshosname"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/border_shap"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:padding="6dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/detalshosadrees"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/border_shap"
+
+        android:textSize="16sp"
+        />
+    <TextView
+        android:padding="6dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/detalscity"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/border_shap"
+
+        android:textSize="16sp"
+        />
+    <TextView
+        android:padding="6dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/detalsnotes"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/border_shap"
+
+        android:textSize="16sp"
+        />
+
+    <ProgressBar
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="170dp"
+        android:id="@+id/progressBardetals"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+
+<Button
+    android:id="@+id/detalscalll"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="@drawable/shap_green"
+    android:layout_marginTop="133dp"
+    android:text="اتـصـــال"
+
+    android:textColor="@color/windowBackground"
+    android:textSize="20sp"
+    />
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>
+</ScrollView>

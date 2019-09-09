@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="colorPrimary">#4673A3</color>
+<color name="colorPrimaryDark">#FF2C4968</color>
+<color name="colorAccent">#FF2C4968</color>
+<color name="windowBackground">#F5F5F5</color>
+<color name="navigationBarColor">#000000</color>
+<color name="colorAccent2">#c8e8ff</color>
+    <color name="colorAccent3">#F5F5F5</color>
+    <color name="colorAccent4">#122970FF</color>
+
+    <color name="darkgreen">#209618</color>
+</resources>

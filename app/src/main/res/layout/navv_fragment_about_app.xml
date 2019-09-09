@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <TextView
+            android:layout_marginTop="50dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:paddingTop="4dp"
+        android:text="@string/about_app"
+        android:textSize="22sp" />
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:text="الخمول الشديد وعدم القدرة على النهوض من الفراش والشعور بالرغبة في النوم لوقتٍ أطول. اعراض فقر الدم ونقص الحديد التعب الدائم والشعور بالإرهاق عند القيام بأقل مجهود. تسارع نبضات القلب. شحوب الجلد والوجه. قلة التركيز. اعراض فقر الدم عند الرضع تغير لون الوجه واصفراره وعدم تورده. البشرة الشاحبة، وخاصة حول العينين والأظافر. انخفاض شهية الطفل الرضيع وعدم رغبته بتناول الحليب بكمية كافية. تعب الطفل وخموله وانخفاض نشاطه الحركي مقارنة مع أقرانه."/>
+
+        </LinearLayout>
+
+</RelativeLayout>

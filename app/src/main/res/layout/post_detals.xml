@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="54dp">
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/detalepostimage"
+        android:layout_width="match_parent"
+        android:layout_height="227dp"
+
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="9dp"
+
+        app:srcCompat="@drawable/rv_favourite_imag1" />
+
+
+    <TextView
+        android:id="@+id/postdetaltitle"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="234dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:text="طرق الوقاية من الامراض"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/postdetalcaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginRight="9dp"
+        android:padding="6dp"
+        android:textSize="17sp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:text="بر الوالدين بر الوالدين هو حسن معاملة الوالدين والعناية بهما، وطاعة أوامرهما فيما لا يتعارض مع عصيان الخالق، وكذلك العمل بما يرضيهما. والبر هو أقصى درجات الإحسان إلى الوالدين، وحُكمه واجب على كل مسلم ومسلمة، وعكس البر عقوق الوالدين وحكمه حرام وهو من الكبائر والمعاصي العظيمة. ووصى النبي صلى الله عليه وسلم الوالدين بأن يُعلما أبناءهما كيفية البر، ولعل في هذا رحمة للأبناء. أهمية بر الوالدين أَولى الإسلام برَّ الوالدين والإحسان إليهما أهمية كبيرة، ووعد الله من يفعله بالأجر والثواب، فقد قرَن الله سبحانه وتعالى بين عبادته وبر الوالدين في الآية: {وقضى ربك أن لا تعبدوا إلا إياه وبالوالدين إحساناً}، وهذا الربط يرفع من درجة البر عند الله. وتكمن أهمية البر فيما يلي: بر الوالدين من أحب الأعمال إلى الله تعالى بعد الصلاة على وقتها، كما ورد في الحديث النبوي الصحيح: عن ابن مسعود رضي الله عنه قال: سألت رسول الله صلى الله عليه وسلم: أي العمل أحب إلى الله قال: الصلاة على وقتها. قال ثم أي؟ قال: ثم برّ الوالدين. قال: ثم أي؟ قال: الجهاد في سبيل الله قال حدثني بهن ولو استزدته لزادني. رواه البخاري. بر الوالدين سبب مهم لدخول الجنة، ومن لم يقدر عليه فقد خسر خسراناً عظيماً. بر الوالدين مرتبط بتفريج الهموم والأحزان وجلب الرزق ورضا الله والراحة في الدنيا والآخرة. يشعُر من يبرّ والديه بمحبة الله له من خلال توفيقه في حياته، كما يرزُقه الله سبحانه وتعالى بأبناء بارّين له في المُستقبل. صور بر الوالدين هناك صور عديدة لبر الوالدين ومن أهمها ما يلي: يكون بر الوالدين في كل ما يرضيهما ويسرهما من فعل أو قول، وترك كل ما يغضبهما ويحزنهما. خفض الجناح لهما والخضوع في المعاملة. لين الجانب من القول والفعل والنظرة والنبرة واعتدال الجلسة، ومستوى الصوت عند التحدث معهما، واتباع آداب الحديث وعدم مقاطعتهما. الطاعة التامة لهما في غير معصية الله. عدم التكبر عليهما وعدم الضجر منهما ومن مجالستهما. تقديمهما على النفس في الطعام والشراب والمشي ودخول المكان أو الخروج منه احتراماً لهما. الاهتمام الخاص بالأم، لزيادة تعبها في تربية الأولاد وحملهم وولادتهم وإرضاعهم. على الأبناء تقديم المزيد من البر والطاعة والتودد والمجالسة عند كبر سن الوالدين. بعد وفاة الوالدين على الأبناء الاستمرار في برهما، عن طريق الدعاء لهما والاستغفار عنهما، وصلة رحمهما وأصدقائهما، وإخراج الصدقات عن روحيهما.
+
+   إقرأ المزيد على موضوع.كوم: https://mawdoo3.com/%D9%85%D9%82%D8%A7%D9%84_%D9%82%D8%B5%D9%8A%D8%B1_%D8%B9%D9%86_%D8%A8%D8%B1_%D8%A7%D9%84%D9%88%D8%A7%D9%84%D8%AF%D9%8A%D9%86" />
+
+
+</RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="7dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+
+        <TextView
+            android:id="@+id/rv_caption"
+            android:layout_width="250dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="8dp"
+            android:paddingTop="5dp"
+            android:paddingRight="1dp"
+            android:text="طرق الوقاية من الامراض " />
+
+        <ImageView
+            android:id="@+id/rv_articles_image"
+            android:layout_width="385dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/agenda" />
+
+        <ImageView
+            android:layout_marginTop="14dp"
+            android:id="@+id/rv_favourite_image"
+            android:layout_width="21dp"
+            android:layout_height="20dp"
+            android:src="@drawable/favourit_icon" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
