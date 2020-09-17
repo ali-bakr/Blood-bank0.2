@@ -103,13 +103,8 @@
         android:textSize="16sp"
         />
 
-    <ProgressBar
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="170dp"
-        android:id="@+id/progressBardetals"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="40dp"
-        android:layout_height="40dp" />
+
+
 
 
 <Button

@@ -34,10 +34,10 @@ public interface Api {
     @POST("signup")
     Call<RegisterResponse> UserRegister(
             @Field("name") String S_name,@Field("email") String S_email,
-            @Field("birth_date") String S_birth_date,@Field("city_id") String S_city_id,
+            @Field("birth_date") String S_birth_date,@Field("city_id") int S_city_id,
             @Field("phone") String S_phone,@Field("donation_last_date") String S_donation_last_date,
             @Field("password") String S_password,@Field("password_confirmation") String Spassword_confirmation,
-            @Field("blood_type") String S_blood_type
+            @Field("blood_type_id") int S_blood_type
 
     );
 

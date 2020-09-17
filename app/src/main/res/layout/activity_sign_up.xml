@@ -272,7 +272,7 @@
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
           android:background="@drawable/shap_blue"
-            android:clickable="true"
+
 
             android:text="تـسـجـيــل"
             android:textColor="#ffffffff"
@@ -284,7 +284,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0"
-            tools:ignore="OnClick" />
+          />
     </LinearLayout>
 
 

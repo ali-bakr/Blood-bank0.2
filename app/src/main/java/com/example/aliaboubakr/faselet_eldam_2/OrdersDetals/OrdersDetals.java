@@ -28,13 +28,13 @@ public class OrdersDetals extends Fragment {
     String phnum,apitokin="W4mx3VMIWetLcvEcyF554CfxjZHwdtQldbdlCl2XAaBTDIpNjKO1f7CHuwKl";
     public TextView name,age,bagsnom,notes,city,hosname,hosaddres,phone,type;
     Intent detals;
-    ProgressBar pDetals;
+//   ProgressBar pDetals;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v=inflater.inflate(R.layout.donation_detals,container,false);
 
-pDetals=v.findViewById(R.id.progressBardetals);
+//pDetals=v.findViewById(R.id.progressBardetals);
 
         name=v.findViewById(R.id.detalsname);
         hosaddres=v.findViewById(R.id.detalshosadrees);
@@ -69,7 +69,7 @@ pDetals=v.findViewById(R.id.progressBardetals);
     }
 
     public void getOrderDetals(){
-        pDetals.setVisibility(View.VISIBLE);
+    //    pDetals.setVisibility(View.VISIBLE);
         Retrofit retrofit= RetrofitClient.getInstant();
         Api api=retrofit.create(Api.class);
 
@@ -79,7 +79,7 @@ pDetals=v.findViewById(R.id.progressBardetals);
         postDetalsModelCall.enqueue(new Callback<OrdersDetalsModel>() {
             @Override
             public void onResponse(Call<OrdersDetalsModel> call, Response<OrdersDetalsModel> response) {
-pDetals.setVisibility(View.GONE);
+//pDetals.setVisibility(View.GONE);
                 if (response.body().getStatus()==1)
                 {
                     name.setText("اسـم المريض : "+response.body().getOrdersDetalsData().getPatientName());

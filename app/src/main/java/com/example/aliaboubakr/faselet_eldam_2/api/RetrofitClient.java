@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
 /*
-    private static final String BASE_URL = "http://ipda3.com/blood-bank/api/v1/";
+    private static
     private static RetrofitClient mInstance;
     private Retrofit retrofit;
 

@@ -6,6 +6,8 @@ import com.google.gson.annotations.SerializedName;
 
 public class RegisterResponse {
 
+
+
     @SerializedName("status")
     @Expose
     private Integer status;
@@ -39,5 +41,4 @@ public class RegisterResponse {
     public void setData(RegisterData registerData) {
         this.registerData = registerData;
     }
-
 }

@@ -20,6 +20,7 @@ import com.example.aliaboubakr.faselet_eldam_2.R;
 import com.example.aliaboubakr.faselet_eldam_2.api.Api;
 import com.example.aliaboubakr.faselet_eldam_2.api.RetrofitClient;
 import com.example.aliaboubakr.faselet_eldam_2.nav_drawer1;
+import com.example.aliaboubakr.faselet_eldam_2.newlogin.LogIn;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -31,7 +32,7 @@ public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelec
     EditText name, email, birth_date, city_id, phone, donation_last_date, password, password_confirmation, blood_type;
     String S_name, S_email, S_birth_date, S_city_id, S_phone, S_donation_last_date, S_password, S_password_confirmation, S_blood_type;
     Button register;
-
+    Intent intent;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,10 +53,10 @@ public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelec
         spinner1.setOnItemSelectedListener(this);
 
 
-        Spinner spinner2 = findViewById(R.id.CitiesSpinner);
-        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.Cities, android.R.layout.simple_spinner_item);
+     //   Spinner spinner2 = findViewById(R.id.CitiesSpinner);
+      //  ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.Cities, android.R.layout.simple_spinner_item);
 
-        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         //spinner2.setAdapter(adapter);
         //spinner2.setOnItemSelectedListener(this);
 
@@ -72,7 +73,7 @@ public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelec
 register.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        CreatAccount();
+   CreatAccount();
     }
 });
 
@@ -83,15 +84,15 @@ register.setOnClickListener(new View.OnClickListener() {
 
     public void CreatAccount() {
         S_name = name.getText().toString().trim();
-        S_city_id = city_id.getText().toString().trim();
         S_email = email.getText().toString().trim();
         S_birth_date = birth_date.getText().toString().trim();
+     //   S_city_id = city_id.getText().toString().trim();
         S_phone = phone.getText().toString().trim();
         S_donation_last_date = donation_last_date.getText().toString().trim();
         S_password = password.getText().toString().trim();
         S_password_confirmation = password_confirmation.getText().toString().trim();
         S_blood_type = blood_type.getText().toString().trim();
-        city_id.setText("1");
+    //    city_id.setText("1");
 
         if (TextUtils.isEmpty(S_name)) {
             name.setError("Required");
@@ -114,14 +115,14 @@ register.setOnClickListener(new View.OnClickListener() {
         } else {
             Retrofit retrofit = RetrofitClient.getInstant();
             Api api = retrofit.create(Api.class);
-            Call<RegisterResponse> registerResponseCall = api.UserRegister(S_name, S_email, S_birth_date,
-                    "1", S_phone, S_donation_last_date, S_password, S_password_confirmation, S_blood_type);
+            Call<RegisterResponse> registerResponseCall = api.UserRegister(S_name, S_email, S_birth_date, 1, S_phone, S_donation_last_date, S_password, S_password_confirmation, 1);
             registerResponseCall.enqueue(new Callback<RegisterResponse>() {
                 @Override
                 public void onResponse(Call<RegisterResponse> call, Response<RegisterResponse> response) {
+                    Toast.makeText(SignUp.this, response.body().getMsg(), Toast.LENGTH_SHORT).show();
                     if (response.body().getStatus() == 1) {
                        Toast.makeText(SignUp.this, response.body().getMsg(), Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(SignUp.this, nav_drawer1.class);
+                      intent = new Intent(SignUp.this, LogIn.class);
                         startActivity(intent);
                     }
                     else {Toast.makeText(SignUp.this, response.body().getMsg(), Toast.LENGTH_SHORT).show();}
@@ -131,7 +132,8 @@ register.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onFailure(Call<RegisterResponse> call, Throwable t) {
                     Toast.makeText(SignUp.this, "bad", Toast.LENGTH_SHORT).show();
-                    Log.e("hi", t.getMessage());
+
+                    Log.e("hhhhhhhhhhh", t.getMessage());
                 }
             });
 
